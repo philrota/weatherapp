@@ -9,10 +9,23 @@
   background-size: cover;
   background-position: bottom;
 }
-.App-warm {
+.App-hot {
   background-image: url("./assets/warm.png");
   background-size: cover;
   background-position: bottom;
+  transition: 0.5s ease-in;
+}
+.App-warm {
+  background-image: url("./assets/spring.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.5s ease-in;
+}
+.App-coldy {
+  background-image: url("./assets/cold2.png");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.5s ease-in;
 }
 main {
   min-height: 100vh;
@@ -38,12 +51,12 @@ main {
   font-size: 30px;
   transition: 0.4s ease;
   margin-top: -25px;
-  
 }
 .date,
 .temp,
 .weather,
-.location {
+.location,
+.next-days {
   font-family: sans-serif;
   color: aliceblue;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.75);
@@ -60,7 +73,8 @@ main {
   font-size: 25px;
 }
 .temp,
-.weather {
+.weather,
+.next-days {
   text-align: center;
 
   border-radius: 20px;
@@ -73,17 +87,28 @@ main {
 .location {
   font-size: 35px;
 }
-.temp{background-color: rgba(255, 255, 255, 0.4);
-padding:10px;
-font-size: 50px;font-weight: 900;}
-.weather{margin-top: 50px;}
-.converter{text-align: center;}
+.temp {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 900;
+}
+.weather,
+.next-days {
+  margin-top: 50px;
+}
+.converter {
+  text-align: center;
+}
 
-.convback-btn,.conv-btn{margin-left: 5px;
+.convback-btn,
+.conv-btn {
+  margin-left: 5px;
   appearance: none;
   padding: 10px;
   border: none;
   outline: none;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8)}
+  background-color: rgba(255, 255, 255, 0.8);
+}
